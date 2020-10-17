@@ -2,4 +2,4 @@
 
 npm install
 
-Not: Scrool ile yükleme işlemi eksiktir. 
+React Redux, simple filter and search process
