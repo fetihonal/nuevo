@@ -1,0 +1,122 @@
+
+body{
+    background-color: #f2f5f6;
+    font-size: 13px!important;
+    overflow-x: hidden;
+    font-family: "Poppins",sans-serif;
+    color: #111;
+}
+.customContainer{
+    padding: 1vh 2vw;
+}
+.customInput{
+    border-radius: 0.20rem;
+    margin-bottom: 1.7rem;
+}
+.filterBox{
+    height: calc(98vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 0.42rem;
+    border:2px solid #f5f5f5;
+    .filtre{
+        width: 100%;
+        display: block;
+        padding: 0 20px;
+    }
+    #custom-selections{
+        margin-bottom: 1.7rem;
+    }
+}
+.searchBox{
+    background-color: #fff;
+    border-radius: 0.42rem;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    .customInput{
+        width: 250px;
+        margin-bottom: 0;
+    }
+    #custom-selections{
+       min-width: 300px;
+       margin-bottom: 0;
+    }
+}
+.listBox{
+    background-color: #fff;
+    border-radius: 0.42rem;
+    margin-top: 20px;
+    padding: 25px;
+}
+.listItemCard{
+    display: flex;
+    gap: 25px;
+    // margin: 0 auto;
+    margin-bottom: 1.7rem;
+    // width: 60%;
+    border-bottom: 1px solid #f2f5f6;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    &:hover{
+       border-left: 5px solid #336699;
+       border-right: 5px solid #336699;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    h1{
+        color: #111;
+        font-style:bold
+    }
+    .companyName{
+        font-size: 22px;
+        color: #336699;
+        display: block;
+    }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    .row{
+        flex-direction: column-reverse;
+    }
+    .searchBox{
+        flex-wrap: wrap;
+        button{
+            width: 100%;
+        }
+
+    }
+    .customInput{
+        width: 100% !important;
+    }
+    #custom-selections{
+        width: 100%;
+    }
+    .filterBox{
+        height: auto;
+        background: unset;
+        margin-top: 1rem;
+        .filtre{
+            background-color: #fff;
+            border-radius: 0.42rem;
+            padding: 50px 20px !important;
+            margin-bottom: 1rem;
+        }
+    }
+    .listItemCard{
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .companyName{
+            font-size: 16px;
+        }
+    }
+ }

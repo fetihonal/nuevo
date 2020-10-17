@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { LayoutContainer, LayoutSection } from '../src/components/layout/index.js'
+import React from "react";
+import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.scss";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from './store/index';
 
-const Index = () => (
-  <LayoutContainer>
-      <LayoutSection secondary>2</LayoutSection>
-      <LayoutSection main>1</LayoutSection>
-  </LayoutContainer>
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
 );
-
-ReactDOM.render(<Index />, document.getElementById('root'));

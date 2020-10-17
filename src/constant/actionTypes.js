@@ -1,0 +1,6 @@
+
+// FILTERS
+export const FILTER_AREA = 'FILTER_AREA';
+export const FILTER_COMPANY_NAME = 'FILTER_COMPANY_NAME';
+export const SEARCH_BY = 'SEARCH_BY';
+export const SEARCH_BY_JOB = 'SEARCH_BY_JOB';
